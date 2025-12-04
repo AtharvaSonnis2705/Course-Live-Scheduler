@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Calendar, ShieldCheck, Users, ArrowRight, CheckCircle } from 'lucide-react';
+import { Calendar, ShieldCheck, Users, ArrowRight } from 'lucide-react';
 
 const Home: React.FC = () => {
   // Get auth details directly from localStorage
