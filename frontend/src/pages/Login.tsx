@@ -12,7 +12,7 @@ const Login: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent) => {
   e.preventDefault();
   try {
-    const res = await axios.post<AuthResponse>('http://localhost:3000/api/auth/login', { username, password });
+    const res = await axios.post<AuthResponse>('https://course-live-scheduler.onrender.com/api/auth/login', { username, password });
     
     console.log("Login Success:", res.data);
 

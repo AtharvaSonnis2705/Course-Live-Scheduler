@@ -49,14 +49,9 @@ const Home: React.FC = () => {
             variants={staggerContainer}
             className="text-center"
           >
-            {/* Badge */}
-            <motion.div variants={fadeInUp} className="hidden sm:mb-8 sm:flex sm:justify-center">
-              <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-400 ring-1 ring-white/10 hover:ring-white/20 transition">
-                New v2.0 Release <span className="font-semibold text-indigo-400"><span className="absolute inset-0" aria-hidden="true" />Read more <span aria-hidden="true">&rarr;</span></span>
-              </div>
-            </motion.div>
+            
 
-            {/* Main Headline */}
+            
             <motion.h1 
               variants={fadeInUp}
               className="text-4xl font-bold tracking-tight text-white sm:text-6xl bg-clip-text text-transparent bg-gradient-to-r from-white to-indigo-200"
@@ -68,20 +63,20 @@ const Home: React.FC = () => {
               The intelligent platform for modern educational institutes. Automatically detect conflicts, manage instructors, and streamline your academic calendar with zero friction.
             </motion.p>
             
-            {/* --- SMART BUTTONS SECTION --- */}
+            
             <motion.div variants={fadeInUp} className="mt-10 flex items-center justify-center gap-x-6">
               
               {token ? (
-                // OPTION A: If Logged In, Show Dynamic Dashboard Link
+                
                 <Link
                   to={role === 'admin' ? '/admin' : '/instructor'}
                   className="rounded-md bg-indigo-500 px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400 transition-all flex items-center gap-2"
                 >
-                  {/* Dynamic Text based on Role */}
+                  
                   Go to {role === 'admin' ? 'Admin' : 'Instructor'} Dashboard <ArrowRight size={18} />
                 </Link>
               ) : (
-                // OPTION B: If Logged Out, Show "Get Started"
+                
                 <>
                   <Link
                     to="/register"
@@ -99,7 +94,7 @@ const Home: React.FC = () => {
         </div>
       </div>
 
-      {/* --- FEATURE GRID --- */}
+      
       <div className="bg-slate-900 py-24 sm:py-32 border-t border-white/10">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:text-center">
@@ -112,7 +107,7 @@ const Home: React.FC = () => {
           <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
             <div className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
               
-              {/* Feature 1 */}
+              
               <motion.div 
                 whileHover={{ y: -10 }}
                 className="flex flex-col bg-white/5 p-6 rounded-2xl ring-1 ring-white/10 backdrop-blur-sm"
@@ -126,7 +121,7 @@ const Home: React.FC = () => {
                 </dd>
               </motion.div>
 
-              {/* Feature 2 */}
+              
               <motion.div 
                 whileHover={{ y: -10 }}
                 className="flex flex-col bg-white/5 p-6 rounded-2xl ring-1 ring-white/10 backdrop-blur-sm"
@@ -140,7 +135,7 @@ const Home: React.FC = () => {
                 </dd>
               </motion.div>
 
-              {/* Feature 3 */}
+              
               <motion.div 
                 whileHover={{ y: -10 }}
                 className="flex flex-col bg-white/5 p-6 rounded-2xl ring-1 ring-white/10 backdrop-blur-sm"

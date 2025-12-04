@@ -13,7 +13,7 @@ const Register: React.FC = () => {
     e.preventDefault();
     try {
       
-      await axios.post('http://localhost:3000/api/auth/register', { 
+      await axios.post('https://course-live-scheduler.onrender.com/api/auth/register', { 
         username, 
         password, 
         role 

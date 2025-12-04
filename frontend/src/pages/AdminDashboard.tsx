@@ -22,8 +22,8 @@ const AdminDashboard: React.FC = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const instRes = await axios.get<User[]>('http://localhost:3000/api/admin/instructors', config);
-        const courseRes = await axios.get<Course[]>('http://localhost:3000/api/admin/courses', config);
+        const instRes = await axios.get<User[]>('https://course-live-scheduler.onrender.com/api/admin/instructors', config);
+        const courseRes = await axios.get<Course[]>('https://course-live-scheduler.onrender.com/api/admin/courses', config);
         setInstructors(instRes.data);
         setCourses(courseRes.data);
       } catch (error) {
@@ -36,9 +36,9 @@ const AdminDashboard: React.FC = () => {
   const handleAddCourse = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:3000/api/admin/add-course', courseForm, config);
+      await axios.post('https://course-live-scheduler.onrender.com/api/admin/add-course', courseForm, config);
       setMessage('Course Added Successfully!');
-      const res = await axios.get<Course[]>('http://localhost:3000/api/admin/courses', config);
+      const res = await axios.get<Course[]>('https://course-live-scheduler.onrender.com/api/admin/courses', config);
       setCourses(res.data);
     } catch (err) {
       setMessage('Error adding course');
@@ -49,7 +49,7 @@ const AdminDashboard: React.FC = () => {
     e.preventDefault();
     setMessage('');
     try {
-      await axios.post('http://localhost:3000/api/admin/assign-lecture', schedule, config);
+      await axios.post('https://course-live-scheduler.onrender.com/api/admin/assign-lecture', schedule, config);
       setMessage('Lecture Scheduled Successfully!');
     } catch (err: any) {
       const errorMsg = err.response?.data?.msg || 'Error scheduling lecture';

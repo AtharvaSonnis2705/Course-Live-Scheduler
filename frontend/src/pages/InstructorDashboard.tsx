@@ -14,7 +14,7 @@ const InstructorDashboard: React.FC = () => {
       if (!token) return;
       
       try {
-        const res = await axios.get<Lecture[]>('http://localhost:3000/api/instructor/my-lectures', {
+        const res = await axios.get<Lecture[]>('https://course-live-scheduler.onrender.com/api/instructor/my-lectures', {
           headers: { 'x-auth-token': token }
         });
         setLectures(res.data);
