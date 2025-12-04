@@ -32,17 +32,17 @@ const Footer: React.FC = () => {
             </a>
 
             <a 
-              href="https://www.linkedin.com/in/atharva-sonnis-968483188/" 
+              href="https://atharvasonnisportfolio.vercel.app/" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="hover:text-indigo-400 transition-colors duration-200"
             >
-              LinkedIn
+              Portfolio Site
             </a>
 
             
             <a 
-              href="#" 
+              href="https://drive.google.com/file/d/1gfXbUDS9Qh8l3q6CzsHqPhd1YSK8okgO/view?usp=sharing" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="hover:text-indigo-400 transition-colors duration-200"
