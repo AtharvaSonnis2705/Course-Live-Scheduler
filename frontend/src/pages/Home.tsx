@@ -56,11 +56,11 @@ const Home: React.FC = () => {
               variants={fadeInUp}
               className="text-4xl font-bold tracking-tight text-white sm:text-6xl bg-clip-text text-transparent bg-gradient-to-r from-white to-indigo-200"
             >
-              Scheduling mastered. <br/> Conflicts eliminated.
+              Content Scheduling mastered. <br/> Without the hassle.
             </motion.h1>
             
             <motion.p variants={fadeInUp} className="mt-6 text-lg leading-8 text-gray-300">
-              The intelligent platform for modern educational institutes. Automatically detect conflicts, manage instructors, and streamline your academic calendar with zero friction.
+              The platform for modern educational institutes. Manage instructors, and streamline your academic calendar with zero friction.
             </motion.p>
             
             
